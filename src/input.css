@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Fredoka One', cursive;
+}
+
+.btn1{
+    @apply flex items-center justify-between bg-white rounded-full px-4 py-2 shadow-md hover:bg-gray-200 active:scale-95 transition ease-in-out duration-300;
+}

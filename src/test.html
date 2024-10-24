@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+    <nav class="nav-wraper indigo">
+        <div class="container">
+            <a href="#" class="brand-logo center">Site Title</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">login</a></li>
+            </ul> 
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <h5 class="purple darken-3 white-text">hi</h5>
+    <h5 class="teal darken-2 yellow-text text-lighter-3">hi</h5>
+    <a href="#" class="btn waves-effect waves-light">normal</a>
+    <a href="#" class="btn-small">small btn</a>
+    <a href="#" class="btn-large">large</a>
+    <a href="#" class="btn indigo waves-effect waves-light">Indigo btn</a>
+    <a href="#" class="btn disabled">disable btn</a>
+    
+    <a href="#" class="btn-floating pulse">floating btn</a>
+    <div href="#" class="btn">i am a div tag</div>
+    <section><!--https://materializecss.com/icons.html-->
+        <i class="material-icons red-text">error</i>
+        <i class="material-icons yellow-text text-darken-2">warning</i>
+        <i class="material-icons blue-text">cloud</i>
+
+        <a href="#" class="btn">
+            <span>send</span>
+            <i class="material-icons right">send</i>
+        </a>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();//method sidenav from materialize
+        })
+    </script>
+</body>
+</html>

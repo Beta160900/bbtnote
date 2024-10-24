@@ -1,0 +1,43 @@
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+this doccument will use materializecss and tailwindcss and https://daisyui.com/ (library on top of tailwindcss)
+
+
+
+1. Class Name Conflicts
+Both Materialize and Tailwind have utility classes like container, row, card, or flex. If both frameworks use the same class names but apply different styles, it can cause unpredictable layouts.
+Example: Materialize's container sets max-width with padding, while Tailwind's container applies responsive widths.
+Solution:
+
+Use scoped CSS or custom prefixes in Tailwind to avoid naming conflicts (e.g., by configuring Tailwind to generate classes like tw-container instead of container).
+2. File Size and Performance
+Both frameworks load many CSS rules. Including both in the same project can significantly increase the CSS file size, which may slow down page loading.
+Solution:
+
+Use PurgeCSS with Tailwind to remove unused CSS and reduce file size.
+Only import specific components from Materialize that you need instead of the entire library.
+3. Styling Philosophy Differences
+Tailwind is utility-first, meaning it encourages small, composable classes, while Materialize offers more pre-built components. Using both might make your CSS messy and inconsistent.
+Solution:
+
+Decide on a primary framework (Tailwind for utility classes or Materialize for components) and use the other only for specific cases.
+4. JavaScript Conflicts (If Using Materialize JS)
+If you are also including Materialize's JavaScript components, they may interfere with other frameworks or libraries, especially if Tailwind's components rely on JavaScript.
+Solution:
+
+Ensure that you only initialize and use Materialize’s components when necessary. You might also need to handle potential event conflicts manually.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+soooooooooooooooooooooooooooooooo im gonna use tailwindcss and materializejs and materializeicon 
