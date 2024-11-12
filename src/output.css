@@ -1810,6 +1810,42 @@ html{
   }
 }
 
+.artboard.phone-1.horizontal,
+      .artboard.phone-1.artboard-horizontal{
+  width: 568px;
+  height: 320px;
+}
+
+.artboard.phone-2.horizontal,
+      .artboard.phone-2.artboard-horizontal{
+  width: 667px;
+  height: 375px;
+}
+
+.artboard.phone-3.horizontal,
+      .artboard.phone-3.artboard-horizontal{
+  width: 736px;
+  height: 414px;
+}
+
+.artboard.phone-4.horizontal,
+      .artboard.phone-4.artboard-horizontal{
+  width: 812px;
+  height: 375px;
+}
+
+.artboard.phone-5.horizontal,
+      .artboard.phone-5.artboard-horizontal{
+  width: 896px;
+  height: 414px;
+}
+
+.artboard.phone-6.horizontal,
+      .artboard.phone-6.artboard-horizontal{
+  width: 1024px;
+  height: 320px;
+}
+
 .btn-circle:where(.btn-xs){
   height: 1.5rem;
   width: 1.5rem;
@@ -1977,6 +2013,10 @@ html{
   margin-bottom: 3rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -2051,6 +2091,10 @@ html{
 
 .w-full{
   width: 100%;
+}
+
+.w-4\/5{
+  width: 80%;
 }
 
 .flex-1{
@@ -2129,6 +2173,14 @@ html{
   border-width: 4px;
 }
 
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-t-4{
+  border-top-width: 4px;
+}
+
 .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2169,6 +2221,14 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-70{
+  --tw-bg-opacity: 0.7;
+}
+
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -2183,6 +2243,10 @@ html{
 
 .p-2{
   padding: 0.5rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .p-8{
@@ -2230,6 +2294,11 @@ html{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-base{
@@ -2291,6 +2360,21 @@ html{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-500{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
+}
+
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .shadow{
@@ -2421,6 +2505,10 @@ body {
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .active\:scale-95:active{
