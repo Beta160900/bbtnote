@@ -1,0 +1,38 @@
+<div class="navbar rounded-md mx-0 w-full border-4 border-white bg-pink-300 flex justify-between shadow-lg">
+  <div class="flex-none">
+      <a href="index.html" class="btn text-xl btn-ghost"><i class="material-icons">menu</i></a>
+  </div>
+  <div class="flex-1">
+      <a class="btn btn-ghost text-xl">Bbt note</a>
+  </div>
+  
+  <div class="flex-none gap-2 mr-4">
+      <!--<div class="form-control">
+      <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+      </div>-->
+      <div class="modal-control">
+          <button class="btn btn-ghost md:w-auto text-xl font-normal" onclick="my_modal_1.showModal()">guest</button>
+          <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                  <h3 class="text-lg font-bold">now you are login as guest</h3>
+                  <p class="py-4">please login with your email</p>
+                  <p class="py-4"></p>
+                  <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                  </form>
+              </div>
+          </dialog>
+      </div>
+      <div class="flex-none dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar overflow-hidden">
+              <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+
+          <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a onclick="alert('Authentication is currently under construction. Please check back later.');">Login</a></li>
+              <li><a onclick="alert('Authentication is currently under construction. Please check back later.');">Sign up</a></li>
+          </ul>
+      </div>
+  </div>
+</div>

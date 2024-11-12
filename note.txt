@@ -41,3 +41,6 @@ Ensure that you only initialize and use Materialize’s components when necessar
 
 
 soooooooooooooooooooooooooooooooo im gonna use tailwindcss and materializejs and materializeicon 
+
+
+((bucket_id = 'pdfs'::text) AND (name ~~ 'Math/%'::text) AND (auth.role() = 'anon'::text))

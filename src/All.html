@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>All file page</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
+    <script>
+        add_block('math-container','model/Math.html')
+        add_block('science-container','model/Science.html')
+        add_block('thai-container','model/Thai.html')
+        add_block('eng-container','model/Eng.html')
+        add_block('others-container','model/Others.html')
+        add_block('note-container','model/Note.html')
+    </script>
+</head>
+<body class="bg-fixed bg-cover bg-center" style="background-image: url('img/bg1.jpg'); min-height: 100vh;">
+    <div id="nav-placeholder"></div>
+    <div class="py-9 flex flex-col items-center justify-center">
+
+        <div id="math-container"></div>
+        <div id="science-container" class="mt-12"></div>
+        <div id="thai-container" class="mt-12"></div>
+        <div id="eng-container" class="mt-12"></div>
+        <div id="others-container" class="mt-12"></div>
+        <div id="note-container" class="mt-12"></div>
+
+    </div>
+
+    <script type="module">
+        import { uploadPDF, displayPDFs } from './supabaseFunctions.js';
+
+        // Initialize display of PDFs when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            displayPDFs('public', 'pdf-container');
+            displayPDFs('Math', 'math-pdf-container');
+            displayPDFs('Science', 'science-pdf-container');
+            displayPDFs('Thai', 'thai-pdf-container');
+            displayPDFs('Eng', 'eng-pdf-container');
+            displayPDFs('Others', 'others-pdf-container');
+            displayPDFs('Note', 'note-pdf-container');
+        });
+
+        // Attach the uploadPDF function to the global scope
+        window.uploadPDF = uploadPDF;
+    </script>
+</body>
+</html>
