@@ -1,15 +1,13 @@
 // pdfFunctions.js
 const { google } = require('googleapis');
-
-// Access environment variables from the .env file
-const serviceAccountJson = JSON.parse(process.env.SERVICE_ACCOUNT_JSON);
+process.env.NODE_OPTIONS = '--openssl-legacy-provider';
 
 // Initialize Google Drive API client
 const SCOPES = ['https://www.googleapis.com/auth/drive'];
 const auth = new google.auth.JWT(
-  serviceAccountJson.client_email,
+  process.env.SERVICE_ACCOUNT_client_email,
   null,
-  serviceAccountJson.private_key,
+  process.env.SERVICE_ACCOUNT_private_key,
   SCOPES
 );
 

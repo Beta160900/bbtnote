@@ -44,3 +44,4 @@ soooooooooooooooooooooooooooooooo im gonna use tailwindcss and materializejs and
 
 
 ((bucket_id = 'pdfs'::text) AND (name ~~ 'Math/%'::text) AND (auth.role() = 'anon'::text))
+https://notebbt-105fd979e4b5.herokuapp.com/ | https://git.heroku.com/notebbt.git

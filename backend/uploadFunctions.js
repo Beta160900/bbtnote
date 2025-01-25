@@ -6,16 +6,12 @@ const fs = require('fs');
 // Initialize multer for file upload
 const upload = multer({ dest: 'uploads/' });
 
-// Access environment variables from the .env file
-const serviceAccountJson = JSON.parse(process.env.SERVICE_ACCOUNT_JSON);
-const folderId = process.env.FOLDER_ID; 
-
 // Initialize Google Drive API client
 const SCOPES = ['https://www.googleapis.com/auth/drive.file'];
 const auth = new google.auth.JWT(
-  serviceAccountJson.client_email,
+  process.env.SERVICE_ACCOUNT_client_email,
   null,
-  serviceAccountJson.private_key,
+  process.env.SERVICE_ACCOUNT_private_key,
   SCOPES
 );
 
