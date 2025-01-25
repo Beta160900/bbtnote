@@ -6,8 +6,10 @@
     <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="getPdf.js"></script>
     <script>
         add_block('eng-container','model/Eng.html')
+        window.onload = () => fetchPdfFiles('eng-pdf-container','ENG');
     </script>
 </head>
 <body class="bg-fixed bg-cover bg-center" style="background-image: url('img/bg1.jpg'); min-height: 100vh;">

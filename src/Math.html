@@ -1,13 +1,15 @@
 <html>
 <head>
-    <title>Math file page</title>
+    <title>Thai file page</title>
     <link rel="stylesheet" href="output.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="getPdf.js"></script>
     <script>
         add_block('math-container','model/Math.html')
+        window.onload = () => fetchPdfFiles('math-pdf-container','MATH');
     </script>
 </head>
 <body class="bg-fixed bg-cover bg-center" style="background-image: url('img/bg1.jpg'); min-height: 100vh;">
@@ -15,17 +17,5 @@
     <div class="py-9 flex flex-col items-center justify-center">
         <div id="math-container"></div>
     </div>
-
-    <script type="module">
-        import { uploadPDF, displayPDFs } from './supabaseFunctions.js';
-
-        // Initialize display of PDFs when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            displayPDFs('Math', 'math-pdf-container');
-        });
-
-        // Attach the uploadPDF function to the global scope
-        window.uploadPDF = uploadPDF;
-    </script>
 </body>
 </html>

@@ -6,8 +6,10 @@
     <!-- Import Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="getPdf.js"></script>
     <script>
         add_block('thai-container','model/Thai.html')
+        window.onload = () => fetchPdfFiles('thai-pdf-container','THAI');
     </script>
 </head>
 <body class="bg-fixed bg-cover bg-center" style="background-image: url('img/bg1.jpg'); min-height: 100vh;">
@@ -15,14 +17,5 @@
     <div class="py-9 flex flex-col items-center justify-center">
         <div id="thai-container"></div>
     </div>
-
-    <script type="module">
-        import { uploadPDF, displayPDFs } from './supabaseFunctions.js';
-        document.addEventListener('DOMContentLoaded', () => {
-            displayPDFs('Thai', 'thai-pdf-container');
-        });
-        // Attach the uploadPDF function to the global scope
-        window.uploadPDF = uploadPDF;
-    </script>
 </body>
 </html>
