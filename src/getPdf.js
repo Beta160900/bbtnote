@@ -1,6 +1,6 @@
 async function fetchPdfFiles(containerID,folderName) {
     try {
-      console.log(`https://bbtbackend.herokuapp.com/get-pdfs?Id=${folderName}`);
+      console.log(`https://lucky-mermaid-12fefb.netlify.app/.netlify/functions/get-pdfs?Id=${folderName}`);
       const response = await fetch(`https://lucky-mermaid-12fefb.netlify.app/.netlify/functions/get-pdfs?Id=${folderName}`);
       const pdfFiles = await response.json();
   
