@@ -1,6 +1,8 @@
 async function fetchPdfFiles(containerID,folderName) {
     try {
-      const response = await fetch(`http://localhost:3000/get-pdfs?Id=${folderName}`);
+      console.log(`https://bbtbackend.herokuapp.com/get-pdfs?Id=${folderName}`);
+      
+      const response = await fetch(`https://bbtbackend.herokuapp.com/get-pdfs?Id=${folderName}`);
       const pdfFiles = await response.json();
   
       const pdfList = document.getElementById(containerID);
