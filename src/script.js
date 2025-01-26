@@ -24,7 +24,7 @@ function uploadPDF(Inputid,folderName){
     formData.append('file', fileInput.files[0]);
 
     // Append the folderId to the URL query parameter
-    fetch(`http://localhost:3000/upload?Id=${folderName}`, {
+    fetch(`https://lucky-mermaid-12fefb.netlify.app/.netlify/functions/upload?Id=${folderName}`, {
         method: 'POST',
         body: formData
     })
