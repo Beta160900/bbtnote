@@ -31,7 +31,8 @@ function uploadPDF(Inputid,folderName){
     .then(response => response.text())
     .then(data => {
         console.log(data);
-        document.getElementById('response').textContent = 'File uploaded successfully!';
+        alert('File upload successful!');  // Show success alert
+        location.reload();  // Refresh the page after upload
     })
     .catch(error => {
         console.error('Error uploading file:', error);
